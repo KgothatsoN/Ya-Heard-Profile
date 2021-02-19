@@ -24,6 +24,14 @@ body    {
     background: white;
     border-radius: 22px;
     text-align: center;
+    box-shadow: 5px 6px 13px #9af0f0;
+
+    transition: 0.5s ease;
+}
+
+.profile-card:hover   {
+    transform: scale(1.5);
+    box-shadow: 5px 6px 13px #d07bb3;
 }
 
 .age    {
@@ -34,10 +42,11 @@ body    {
 .background  {
     grid-area: profile-background;
     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgb(148 239 239) 0%, rgb(207 100 167) 100%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .background .image  {
     position: relative;
     top: 30px;
@@ -48,7 +57,6 @@ body    {
 .profile-text h2 {
     margin-top: 0;
     padding-top: 73px;
-
 }
 
 .profile-stats  {
@@ -56,10 +64,14 @@ body    {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid #00000052;
+}
+
+.profile-stats .posts .following.border .followers  {
+    padding: 30px;
 }
 
 .following.border  {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #00000052;
+    border-right: 1px solid #00000052;
 }
